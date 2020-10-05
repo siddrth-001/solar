@@ -1,0 +1,92 @@
+ <html>
+<title>new</title>
+	
+  <head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+	
+<body>
+
+<a-scene>
+
+	<a-assets>
+		<img id="sun" src="./tex/sun.jpg"> 
+		<img id="001" src="./tex/11.jpg"> 
+		<img id="002" src="./tex/12.jpg">  
+    <img id="003" src="./tex/13.jpg">  
+    <img id="004" src="./tex/14.jpg">  
+    <img id="005" src="./tex/15.jpg">  
+    <img id="006" src="./tex/16.jpg">  
+    <img id="007" src="./tex/17.jpg">  
+    <img id="008" src="./tex/18.jpg">  
+    <img id="009" src="./tex/19.jpg">  
+
+	</a-assets>
+      <!-- Basic circle. -->
+  <a-circle color="FCA000" radius="5" position ="0 0 0"></a-circle>
+    
+  <!-- SUN-->
+    
+  <a-sphere material="src: #sun"  radius="3" 
+            segments-height="84" normal-map="#001" normal-texture-repeat="1 1" normal-scale="1 1" roughness="0.1">
+   </a-sphere> 
+
+   
+   <!--MERCURY--> 
+   <a-sphere material="src: #001"  radius=".5" 
+            segments-height="84" position="5 0 0" normal-map="#001" normal-texture-repeat="1 1" normal-scale="1 1" roughness="0.1">
+   </a-sphere>
+
+   <!-- VENUS--> 
+   <a-sphere material="src: #002"  radius=".75"  position="8 0 0"
+            segments-height="84" normal-map="#001" normal-texture-repeat="1 1" normal-scale="1 1" roughness="0.1">
+   </a-sphere>
+
+   <!-- EARTH--> 
+   <a-sphere material="src: #003"  radius="1" position="11 0 0"
+            segments-height="84" normal-map="#001" normal-texture-repeat="1 1" normal-scale="1 1" roughness="0.1">
+   </a-sphere>
+
+   <!-- MARS--> 
+   <a-sphere material="src: #004"  radius=".95" position="14 0 0"
+            segments-height="84" normal-map="#001" normal-texture-repeat="1 1" normal-scale="1 1" roughness="0.1">
+   </a-sphere>
+
+   <!-- JUPITER --> 
+   <a-sphere material="src: #005"  radius="1.5" position="20 0 0"
+            segments-height="84" normal-map="#001" normal-texture-repeat="1 1" normal-scale="1 1" roughness="0.1">
+     
+   </a-sphere>
+
+   
+   <!-- SATURN--> 
+   <a-sphere material="src: #006"  radius="1.25" position="24 0 0"
+            segments-height="84" normal-map="#001" normal-texture-repeat="1 1" normal-scale="1 1" roughness="0.1">
+   </a-sphere>
+
+
+  <!-- URANUS--> 
+   <a-sphere material="src: #007"  radius="1.1" position="28 0 0"
+            segments-height="84" normal-map="#001" normal-texture-repeat="1 1" normal-scale="1 1" roughness="0.1">
+   </a-sphere>
+
+   <!--NEPTUNE--> 
+   <a-sphere material="src: #008"  radius="1" position="32 0 0"
+            segments-height="84" normal-map="#001" normal-texture-repeat="1 1" normal-scale="1 1" roughness="0.1">
+   </a-sphere>
+
+   <!-- pluto-->
+
+   <a-sphere material="color=red ; src: #009"  radius=".75" position="35 0 0"
+            segments-height="84" position="36 0 0" repeat="1 1" roughness="0.1">
+       
+   </a-sphere>
+    
+   <a-sky scr="tex/gal.jpg" scale="100 100 1000"></a-sky>    
+
+  <a-camera position="12 2 14" rotation="0 0 0" user-height='0' src="tex/gal.jpg"></a-camera>
+ 
+</a-scene>
+	
+</body>
+</html>
